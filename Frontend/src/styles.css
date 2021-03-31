@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.wrapper {
+    text-align: center;
+}
+
+.buttonReg {
+    position: absolute;
+    top: 50%;
+    margin-left: -200px;
+   
+}
+.buttonSes {
+    position: absolute;
+    top: 50%;
+    margin-left: 0px;
+}
+.title{
+    margin-top:250px;
+    margin-left:-50px;
+}
