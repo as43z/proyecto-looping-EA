@@ -2,13 +2,15 @@
 //express and middlewares
 import express from 'express';
 import morgan from 'morgan';
+import cors from 'cors';
 import user_router from './routes/user_service';
 
 const app = express();
 
 // middlewares
-app.use(express.json());
-app.use(morgan('dev'));
+app.use(express.json());    // To patch JSON body.
+app.use(morgan('dev'));     // As a logger, like log4j.
+app.use(cors());            // To connect Front and Back servers.
 
 // set environmental variables (app.get('name of the variable'))
 app.set('PORT', process.env.PORT || 8080); // then perform app.get('PORT')
